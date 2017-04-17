@@ -5,3 +5,5 @@ plugins:
 env:
   mocha: true
   node:  true
+rules:
+  no-multi-spaces: off
