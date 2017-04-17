@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha"
+    "test": "mocha",
+    "test-silence": "mocha -R min",
+    "precommit": "npm run lint && npm run test-silence"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,9 @@
   "dependencies": {
     "js-yaml": "^3.8.3",
     "koa": "^2.2.0",
-    "request": "^2.81.0"
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.1.1",
+    "request": "^2.81.0",
+    "underscore": "^1.8.3"
   }
 }

@@ -1,9 +1,12 @@
-# For now, ignores IDE
+#t  For now, ignores IDE
 .idea/
 .vscode/
 
 # ignores configuration
 config.yml
+
+# ignores playground
+playground.js
 
 # Created by https://www.gitignore.io/api/node,linux,macos,python,windows,pycharm,webstorm,vim
 
