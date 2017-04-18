@@ -7,3 +7,4 @@ env:
   node:  true
 rules:
   no-multi-spaces: off
+  key-spacing: off
