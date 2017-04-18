@@ -6,6 +6,7 @@ class Configuration {
   constructor (config) {
     this.mac        = config.mac || null
     this.syncPeriod = config.syncPeriod || 30
+    this.urlBase    = config.urlBase
   }
 }
 

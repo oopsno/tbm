@@ -16,6 +16,8 @@ describe('config', () => {
     it('should load config.exmaple.yml successfully', () => {
       const cfg = config.loadConfig(example)
       cfg.mac.should.equal('00:00:00:00:00:00')
+      cfg.syncPeriod.should.equal(1200)
+      cfg.urlBase.should.equal('http://host.com/api/v1')
     })
   })
 })

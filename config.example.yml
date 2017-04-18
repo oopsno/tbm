@@ -1,1 +1,3 @@
 mac: 00:00:00:00:00:00
+syncPeriod: 1200
+urlBase: http://host.com/api/v1
