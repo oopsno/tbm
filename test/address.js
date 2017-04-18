@@ -5,7 +5,7 @@ const EchoServer = require('../src/echo-server')
 describe('Address', () => {
   const pair    = {v4: '127.0.0.1', v6: '::1'}
   const address = new Address(pair)
-  const server  = new EchoServer(23333)
+  const server  = new EchoServer()
   server.listen()
 
   describe('#reduce', () => {
@@ -70,7 +70,7 @@ describe('Address', () => {
 
   describe('#buildFrom', () => {
     it('should build from the EchoServer', (done) => {
-      server.snap = pair
+      server.snap           = pair
       server.snap.timestamp = new Date().toJSON()
       Address.buildFrom(server.fullurl())
         .then(copy => {

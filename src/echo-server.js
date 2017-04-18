@@ -3,7 +3,10 @@ const Router     = require('koa-router')
 const BodyParser = require('koa-bodyparser')
 
 class EchoServer {
-  constructor (port = 3000, url = '/bdd/echo') {
+  constructor (port = null, url = '/bdd/echo') {
+    if (port === null) {
+      port = 10000 + Math.ceil(Math.random() * 50000)
+    }
     this.port   = port
     this.url    = url
     this.snap   = null

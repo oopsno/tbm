@@ -3,7 +3,7 @@ const Payload    = require('../src/payload')
 const EchoServer = require('../src/echo-server')
 
 describe('Payload', () => {
-  const server = new EchoServer(23333)
+  const server = new EchoServer()
   server.listen()
 
   describe('#reduce', () => {
